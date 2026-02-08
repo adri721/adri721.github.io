@@ -10,7 +10,7 @@ title: Projects
   [details](projects/magnetic-suturing)
 
 - **Concentric Tube Robots for Minimally Invasive Surgery**  
-  Continuum robotics · Kinematics
+  Continuum robotics · Kinematics    
   [details](projects/concentric-tube-robots)
 
 - **Total Ergonomic Burden Assessment (TEBA)**  
