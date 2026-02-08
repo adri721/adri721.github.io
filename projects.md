@@ -10,10 +10,13 @@ title: Projects
   [details](projects/magnetic-suturing)
 
 - **Concentric Tube Robots for Minimally Invasive Surgery**  
-  Continuum robotics · Kinematics  
+  Continuum robotics · Kinematics
+  [details](projects/concentric-tube-robots)
 
 - **Total Ergonomic Burden Assessment (TEBA)**  
-  Wearable sensing · Human motion capture  
+  Wearable sensing · Human motion capture
+  [details](projects/teba)
 
 - **QuickTri: Non-contact Vitals Monitoring**  
   Computer vision · Signal processing
+  [details](projects/quicktri)
