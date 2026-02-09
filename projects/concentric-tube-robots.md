@@ -13,7 +13,7 @@ This project focused on the modeling, fabrication, and kinematic validation of c
 ### Modeling
 ![Segmented curvature-based modeling of concentric tubes](../assets/concentric-tube/model.png)
 
-*Segmented tube model illustrating curvature, twist, and section lengths used for kinematic analysis.*
+*Segmented curvature-based modeling of concentric tubes illustrating curvature, twist, and section lengths. Adapted from Webster, Romano, and Cowan, “Kinematics and Calibration of Active Cannulas,” IEEE ICRA 2008.*
 
 ---
 
