@@ -20,7 +20,7 @@ This project investigates the feasibility of magnetically actuated suturing need
 ### Control and Perception
 ![Machine-assisted control architecture integrating vision feedback](../assets/magnetic-suturing/control.png)
 
----
+--- 
 
 ---
 
