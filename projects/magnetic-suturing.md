@@ -1,8 +1,3 @@
-# Magnetically Actuated Suturing Needles
-
-[← Back to Projects](/projects)
-
-
 ---
 layout: default
 title: Magnetically Actuated Suturing Needles
