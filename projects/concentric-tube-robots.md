@@ -43,4 +43,10 @@ Continuum robotics, beam theory, inverse kinematics, energy minimization, additi
 ### Outcome
 Demonstrated accurate kinematic prediction and experimental validation of concentric tube robot behavior. Detailed derivations and extended results are provided in the full project documentation.
 
+---
+
+### Links
+- Manufacturing notes and fabrication details (Notion): [link](https://jewel-louse-b60.notion.site/Concentric-Tube-Robot-Educational-Platform-7b1a04f343eb4cfabc8706df61d023d7)
+
+
 [← Back to Projects](/projects)
