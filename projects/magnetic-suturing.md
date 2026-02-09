@@ -20,11 +20,12 @@ This project investigates the feasibility of magnetically actuated suturing need
 ### Control and Perception
 ![Machine-assisted control architecture integrating vision feedback](../assets/magnetic-suturing/control.png)
 
---- 
+---
 
 ---
 
 ### Experimental Validation
+Closed-loop magnetic needle control was evaluated by executing purse-string trajectories under two imaging modalities.
 
 **Camera Feedback**
 <video controls width="100%">
