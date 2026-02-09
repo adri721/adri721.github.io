@@ -22,8 +22,21 @@ This project investigates the feasibility of magnetically actuated suturing need
 
 ---
 
+---
+
 ### Experimental Validation
-![Closed-loop needle trajectories under imaging feedback](../assets/magnetic-suturing/validation.png)
+
+**Camera Feedback**
+<video controls width="100%">
+  <source src="../assets/magnetic-suturing/camera.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+**Fluoroscopic Feedback**
+<video controls width="100%">
+  <source src="../assets/magnetic-suturing/fluoroscope.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
