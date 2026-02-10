@@ -1,59 +1,48 @@
 ---
 layout: default
-title: Total Ergonomic Burden Assessment (TEBA)
+title: Monocular Depth Estimation
 ---
 
-# Total Ergonomic Burden Assessment (TEBA)
+# Monocular Depth Estimation
 
 
 ### Abstract
-This project developed a quantitative framework to assess ergonomic burden based on human posture and motion in industrial environments. A wearable motion capture system using inertial measurement units (IMUs) was designed to estimate joint kinematics in real time. Sensor data were filtered and fused using an Extended Kalman Filter and mapped to a virtual human model for posture classification. The resulting posture indices were used to compute ergonomic burden scores, enabling early identification of high-risk tasks without reliance on optical tracking.
+This project investigates monocular depth estimation for robotic perception using a single RGB camera. Deep learning models were evaluated to generate relative and absolute depth maps, which were subsequently used to construct dense 3D point clouds. The approach enables improved obstacle perception and mapping in scenarios where dedicated depth sensors are limited or unavailable. Quantitative evaluation was performed by comparing estimated depth against ground-truth measurements from range sensors.
 
 ---
 
-### System Pipeline
-![Wearable motion capture and ergonomic assessment pipeline](../assets/teba/pipeline.png)
+### Depth Estimation Approach
+![Monocular depth estimation architecture](../assets/depth/architecture.png)
 
-*IMU-based sensing and estimation pipeline mapping raw inertial data to posture classification and ergonomic burden scoring.*
-
----
-
-### Wearable Embodiment
-![Wearable jacket with distributed IMU placement](../assets/teba/jacket.png)
-
-*Jacket-based embodiment with distributed inertial sensors enabling motion capture without line-of-sight constraints.*
+*Encoder–decoder based monocular depth estimation using RGB input images.*
 
 ---
 
-### Posture Classification
-![Indexed spinal and body postures used for ergonomic assessment](../assets/teba/postures.png)
+### Point Cloud Generation
+![Dense point cloud generation from monocular depth](../assets/depth/pointcloud.png)
 
-*Posture taxonomy used to map estimated joint kinematics to ergonomic burden indices.*
+*Construction of dense 3D point clouds from monocular depth maps, with and without sensor fusion.*
+
+---
+
+### Quantitative Evaluation
+![Depth estimation accuracy compared to ground truth](../assets/depth/results.png)
+
+*Comparison of estimated depth against ground-truth measurements, demonstrating low relative error.*
 
 ---
 
 ### Technical Contributions
-- Designed a wearable IMU-based motion capture system for industrial ergonomic assessment.
-- Implemented sensor fusion using an Extended Kalman Filter for joint angle estimation.
-- Developed a posture classification and indexing scheme for ergonomic burden scoring.
-- Integrated real-time visualization and validation using a virtual human model.
+- Evaluated deep learning models for monocular depth estimation from RGB images.
+- Generated dense 3D point clouds for robotic perception and obstacle avoidance.
+- Integrated depth estimation with sensor fusion pipelines.
+- Performed quantitative benchmarking against ground-truth depth sensors.
 
 ### Methods
-Wearable sensing, IMU calibration, Extended Kalman Filtering, human motion capture, posture classification.
+Monocular depth estimation, deep learning, point cloud generation, sensor fusion, robotic perception.
 
 ### Outcome
-Demonstrated automated ergonomic burden assessment without reliance on optical tracking, suitable for deployment in factory environments.
-
----
-
-### Experimental Demonstration
-
-The wearable motion capture system was evaluated in real time by mapping estimated joint kinematics to a virtual human model for posture visualization and validation.
-
-<video controls width="100%">
-  <source src="../assets/teba/teba-demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+Demonstrated accurate depth estimation and point cloud reconstruction using a single camera, suitable for real-time robotic perception.
 
 
 [← Back to Projects](/projects)
