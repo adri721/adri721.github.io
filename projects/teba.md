@@ -44,4 +44,16 @@ Wearable sensing, IMU calibration, Extended Kalman Filtering, human motion captu
 ### Outcome
 Demonstrated automated ergonomic burden assessment without reliance on optical tracking, suitable for deployment in factory environments.
 
+---
+
+### Experimental Demonstration
+
+The wearable motion capture system was evaluated in real time by mapping estimated joint kinematics to a virtual human model for posture visualization and validation.
+
+<video controls width="100%">
+  <source src="../assets/teba/teba-demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 [← Back to Projects](/projects)
