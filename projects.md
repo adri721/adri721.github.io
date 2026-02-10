@@ -20,3 +20,7 @@ title: Projects
 - **QuickTri: Non-contact Vitals Monitoring**  
   Computer vision · Signal processing  
   [details](projects/quicktri)
+
+- **Monocular Depth Estimation**  
+  Robotic perception · Deep learning  
+  [details](projects/monocular-depth-estimation)
