@@ -8,22 +8,29 @@ title: Monocular Depth Estimation
 
 <div style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap;">
 
-<div style="flex: 1; min-width: 260px;">
+  <div style="flex: 1; min-width: 260px;">
 
-### Abstract
-This project investigates monocular depth estimation for robotic perception using a single RGB camera. Deep learning models were evaluated to generate relative and absolute depth maps, which were subsequently used to construct dense 3D point clouds. The approach enables improved obstacle perception and mapping in scenarios where dedicated depth sensors are limited or unavailable. Quantitative evaluation was performed by comparing estimated depth against ground-truth measurements from range sensors.
+    <h3>Abstract</h3>
+    <p>
+      This project investigates monocular depth estimation for robotic perception using a single RGB camera.
+      Deep learning models were evaluated to generate relative and absolute depth maps, which were subsequently
+      used to construct dense 3D point clouds. The approach enables improved obstacle perception and mapping
+      in scenarios where dedicated depth sensors are limited or unavailable. Quantitative evaluation was
+      performed by comparing estimated depth against ground-truth measurements from range sensors.
+    </p>
+
+  </div>
+
+  <div style="flex: 1; min-width: 240px; max-width: 360px;">
+
+    <img src="../assets/depth/depth-demo.gif"
+         alt="Monocular depth estimation demo"
+         style="width: 90%; border-radius: 4px;">
+
+  </div>
 
 </div>
 
-<div style="flex: 1; min-width: 240px; max-width: 360px;">
-
-<img src="../assets/depth/depth-demo.gif"
-     alt="Monocular depth estimation demo"
-     style="width: 100%; border-radius: 4px;">
-
-</div>
-
-</div>
 
 ---
 
