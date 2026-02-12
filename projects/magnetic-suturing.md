@@ -12,7 +12,7 @@ This project investigates the feasibility of magnetically actuated suturing need
 ---
 
 ### System Overview
-![System overview of electromagnetic actuation setup](../assets/magnetic-suturing/system.png)
+![Electromagnetic actuation workspace for magnetic suturing needle control, including coils, imaging setup, and control electronics](../assets/magnetic-suturing/system.png)
 
 ---
 
