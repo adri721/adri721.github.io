@@ -14,12 +14,14 @@ This project investigates the feasibility of magnetically actuated suturing need
 ### System Overview
 ![Electromagnetic actuation workspace for magnetic suturing needle control, including coils, imaging setup, and control electronics](../assets/magnetic-suturing/system.png)
 
+*Electromagnetic actuation workspace for magnetic suturing needle control, including coils, imaging setup, and control electronics.*
+
 ---
 
 ### Control and Perception
 ![Machine-assisted control architecture integrating vision feedback](../assets/magnetic-suturing/control.png)
 
----
+*Machine-assisted control architecture integrating vision-based pose estimation with closed-loop electromagnetic actuation.*
 
 ---
 
@@ -37,6 +39,8 @@ Closed-loop magnetic needle control was evaluated by executing purse-string traj
   <source src="../assets/magnetic-suturing/fluoroscope.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+*Closed-loop magnetic needle control executing purse-string trajectories under camera and fluoroscopic feedback during phantom experiments.*
 
 ---
 

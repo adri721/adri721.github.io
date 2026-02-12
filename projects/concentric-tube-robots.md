@@ -59,5 +59,6 @@ A physical concentric tube robot was actuated through insertion and rotation com
   Your browser does not support the video tag.
 </video>
 
+*Physical concentric tube robot undergoing controlled insertion and rotation to evaluate correspondence with model-predicted configurations.*
 
 [← Back to Projects](/projects)

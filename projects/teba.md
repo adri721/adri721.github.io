@@ -55,5 +55,6 @@ The wearable motion capture system was evaluated in real time by mapping estimat
   Your browser does not support the video tag.
 </video>
 
+*Real-time mapping of estimated joint kinematics to a virtual human model for posture visualization and validation.*
 
 [← Back to Projects](/projects)

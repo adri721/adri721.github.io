@@ -37,7 +37,7 @@ title: Monocular Depth Estimation
 ### Depth Estimation Approach
 ![Monocular depth estimation architecture](../assets/depth/architecture.png)
 
-*Encoder–decoder based monocular depth estimation using RGB input images.*
+*Encoder–decoder based monocular depth estimation using RGB input images. Adapted from Bhat, Birkl, Wofk, Wonka and Müller, “ZoeDepth: Zero-shot Transfer by Combining Relative and Metric Depth,”*
 
 ---
 
