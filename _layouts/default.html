@@ -30,8 +30,51 @@
       margin: 20px auto;
     }
 
+    .penguin-egg{
+      position: fixed;
+      right: 14px;
+      bottom: 14px;
+      z-index: 9999;
+
+      width: 44px;
+      height: 44px;
+
+      opacity: 0.06; /* barely visible */
+      transition: opacity 200ms ease, transform 200ms ease;
+    }
+
+    .penguin-egg img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+
+      /* turns the black outline into white */
+      filter: brightness(0) invert(1);
+
+      pointer-events: none; /* click lands on the <a> */
+    }
+
+    .penguin-egg:hover{
+      opacity: 0.22;           /* “found it” */
+      transform: translateY(-2px);
+    }
+
+
   </style>
 </head>
+
+<!-- penguin easter egg -->
+<a
+  class="penguin-egg"
+  href="https://www.youtube.com/watch?v=zWH_9VRWn8Y"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="penguin easter egg"
+>
+  <img src="{{ '/assets/penguin_transparent.png' | relative_url }}" alt="">
+</a>
+
+
 <body>
   <nav>
     <strong>Adri Rajaraman</strong><br>
