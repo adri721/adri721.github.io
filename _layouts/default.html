@@ -48,11 +48,14 @@
       height: 100%;
       object-fit: contain;
 
-      /* turns the black outline into white */
-      filter: brightness(0) invert(1) sepia(0.08);
+      /* white penguin + a subtle outline so it shows on off-white */
+      filter: brightness(0) invert(1) sepia(0.08)
+              drop-shadow(0 0 1.2px rgba(0,0,0,0.45))
+              drop-shadow(0 0 6px rgba(0,0,0,0.12));
 
-      pointer-events: none; /* click lands on the <a> */
+      pointer-events: none;
     }
+
 
     .penguin-egg:hover{
       opacity: 0.4;           /* “found it” */
