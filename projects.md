@@ -5,22 +5,42 @@ title: Projects
 
 ## Selected Projects
 
-- **Magnetically Actuated Suturing Needles**  
-  Medical robotics · Image-guided control  
-  [details](projects/magnetic-suturing)
+<div class="project-grid">
 
-- **Concentric Tube Robots for Minimally Invasive Surgery**  
-  Continuum robotics · Kinematics    
-  [details](projects/concentric-tube-robots)
+  <div class="project-card">
+    <h3>Magnetically Actuated Suturing Needles</h3>
+    <p>Medical robotics · Image-guided control</p>
+    <a href="projects/magnetic-suturing">details →</a>
+  </div>
 
-- **Total Ergonomic Burden Assessment (TEBA)**  
-  Wearable sensing · Human motion capture  
-  [details](projects/teba)
+  <div class="project-card">
+    <h3>Concentric Tube Robots for Minimally Invasive Surgery</h3>
+    <p>Continuum robotics · Kinematics</p>
+    <a href="projects/concentric-tube-robots">details →</a>
+  </div>
 
-- **QuickTri: Non-contact Vitals Monitoring**  
-  Computer vision · Signal processing  
-  [details](projects/quicktri)
+  <div class="project-card">
+    <h3>Total Ergonomic Burden Assessment (TEBA)</h3>
+    <p>Wearable sensing · Human motion capture</p>
+    <a href="projects/teba">details →</a>
+  </div>
 
-- **Monocular Depth Estimation**  
-  Robotic perception · Deep learning  
-  [details](projects/monocular-depth-estimation)
+  <div class="project-card">
+    <h3>QuickTri: Non-contact Vitals Monitoring</h3>
+    <p>Computer vision · Signal processing</p>
+    <a href="projects/quicktri">details →</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Monocular Depth Estimation</h3>
+    <p>Robotic perception · Deep learning</p>
+    <a href="projects/monocular-depth-estimation">details →</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Probe Localisation</h3>
+    <p>Medical robotics · Acoustic localization</p>
+    <a href="projects/probe-localisation">details →</a>
+  </div>
+
+</div>
