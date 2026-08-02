@@ -38,7 +38,7 @@ title: Projects
   </div>
 
   <div class="project-card">
-    <h3>Probe Localisation</h3>
+    <h3>Sensorless tracking of an ultrasound probe</h3>
     <p>Medical robotics · Acoustic localization</p>
     <a href="projects/probe-localisation">details →</a>
   </div>

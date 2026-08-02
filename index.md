@@ -3,6 +3,12 @@ layout: default
 title: Adri Rajaraman
 ---
 
+<img src="assets/tetons.png" alt="Adri Rajaraman"
+     style="display: inline; width: 160px; height: 160px; object-fit: cover;
+            object-position: center 20%; border-radius: 50%;
+            float: right; margin: 0 0 16px 24px;">
+
+
 Robotics engineer working at the intersection of medical robotics, perception, and control.  
 I am interested in building physically grounded learning and control systems for minimally invasive and human-centric robotics.
 

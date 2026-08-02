@@ -13,9 +13,21 @@ This project develops acoustic localization of a piezoelectric receiver relative
 ### Approach
 As the probe sweeps its 210-element aperture, each firing element produces a pulse whose arrival time at the receiver encodes a distance. Across a full frame, the resulting time-of-flight profile forms an acoustic fingerprint of the receiver's position in the probe frame.
 
+![Piezo echo envelope across the probe aperture](../assets/probe-localisation/piezo.png)
+
+*Envelope of the received piezo signal across all 210 beams. The arrival-time ridge encodes the receiver's position in the probe frame.*
+
 **Acquisition.** A custom oscilloscope-based capture system records the probe drive signal and piezo receiver output simultaneously, synchronized with electromagnetic tracking for ground truth in the lab. A 6-axis IMU supplies orientation at deployment, where the electromagnetic tracker is absent.
 
+![Raw acquisition with selected analysis frame](../assets/probe-localisation/frame.png)
+
+*Synchronized raw capture of the probe drive signal and piezo receiver output, with the selected analysis frame highlighted.*
+
 **Signal processing.** Raw piezo signals are bandpass-filtered and envelope-detected; per-beam times of flight are extracted with anchored candidate tracking, dynamic-programming path selection, and residual filtering. Frame boundaries are detected from geometry-derived timing constraints rather than hardcoded thresholds.
+
+![TOF extraction stages](../assets/probe-localisation/tof.png)
+
+*Per-beam time-of-flight extraction: raw candidates, anchor-tracked points, and the filtered result.*
 
 **Localization.** Per-axis gradient-boosted models regress position from engineered TOF-profile features. Neural architectures were systematically evaluated and consistently underperformed at this data scale — the accuracy ceiling proved feature-informational, not architectural.
 
@@ -25,6 +37,10 @@ As the probe sweeps its 210-element aperture, each firing element produces a pul
 Same-domain localization reaches centimeter-scale accuracy in both a water bath and a tissue-mimicking phantom. The pivotal negative result: a model trained in water fails structurally when tested through the phantom — it keys on absolute TOF values, which shift with sound speed and geometry across media. This is not a tuning problem but a structural limitation of any physics-blind regressor, motivating the current work on physics-grounded self-calibration and few-shot domain adaptation.
 
 Tracker-free operation via IMU orientation incurs a modest accuracy penalty, concentrated on the axis where 6-axis IMU yaw is fundamentally unobservable.
+
+![Depth prediction vs ground truth](../assets/probe-localisation/scatter.png)
+
+*Predicted vs. actual receiver depth on held-out data.*
 
 ---
 
