@@ -8,6 +8,12 @@ title: Projects
 <div class="project-grid">
 
   <div class="project-card">
+    <h3>Sensorless tracking of an ultrasound probe</h3>
+    <p>Medical robotics · Acoustic localization</p>
+    <a href="projects/probe-localisation">details →</a>
+  </div>
+  
+  <div class="project-card">
     <h3>Magnetically Actuated Suturing Needles</h3>
     <p>Medical robotics · Image-guided control</p>
     <a href="projects/magnetic-suturing">details →</a>
@@ -37,10 +43,5 @@ title: Projects
     <a href="projects/monocular-depth-estimation">details →</a>
   </div>
 
-  <div class="project-card">
-    <h3>Sensorless tracking of an ultrasound probe</h3>
-    <p>Medical robotics · Acoustic localization</p>
-    <a href="projects/probe-localisation">details →</a>
-  </div>
 
 </div>
