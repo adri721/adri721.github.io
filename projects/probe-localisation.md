@@ -5,56 +5,33 @@ title: Probe Localisation
 
 # Probe Localisation
 
-### Abstract
-This project develops acoustic localization of a piezoelectric receiver relative to a clinical ultrasound probe, using only the time-of-flight of the probe's own imaging pulses — no imaging pipeline, no external tracker at deployment. The motivating application is sensorized needle-tip tracking during ultrasound-guided procedures, where needle tips bend, deviate, and slip out of the imaging plane, and existing tracking solutions add hardware, cost, and workflow friction.
+*Work in progress. Further details will be shared after publication.*
+
+### Overview
+This project explores localizing a small piezoelectric receiver relative to a clinical ultrasound probe using the probe's own imaging pulses, with no change to the probe or its imaging sequence. The motivating application is needle-tip tracking during ultrasound-guided procedures, where the tip can be hard to follow and existing tracking solutions add hardware, cost, and workflow steps. The longer-term goal is to work without an external tracker.
 
 ---
 
-### Approach
-As the probe sweeps its 210-element aperture, each firing element produces a pulse whose arrival time at the receiver encodes a distance. Across a full frame, the resulting time-of-flight profile forms an acoustic fingerprint of the receiver's position in the probe frame.
+### Idea
+As the probe fires across its 210-element aperture, each pulse reaches the receiver at a different time. Across a full frame, these arrival times form a pattern that depends on where the receiver sits relative to the probe.
 
 ![Piezo echo envelope across the probe aperture](../assets/probe-localisation/piezo.png)
 
-*Envelope of the received piezo signal across all 210 beams. The arrival-time ridge encodes the receiver's position in the probe frame.*
-
-**Acquisition.** A custom oscilloscope-based capture system records the probe drive signal and piezo receiver output simultaneously, synchronized with electromagnetic tracking for ground truth in the lab. A 6-axis IMU supplies orientation at deployment, where the electromagnetic tracker is absent.
-
-![Raw acquisition with selected analysis frame](../assets/probe-localisation/frame.png)
-
-*Synchronized raw capture of the probe drive signal and piezo receiver output, with the selected analysis frame highlighted.*
-
-**Signal processing.** Raw piezo signals are bandpass-filtered and envelope-detected; per-beam times of flight are extracted with anchored candidate tracking, dynamic-programming path selection, and residual filtering. Frame boundaries are detected from geometry-derived timing constraints rather than hardcoded thresholds.
-
-![TOF extraction stages](../assets/probe-localisation/tof.png)
-
-*Per-beam time-of-flight extraction: raw candidates, anchor-tracked points, and the filtered result.*
-
-**Localization.** Per-axis gradient-boosted models regress position from engineered TOF-profile features. Neural architectures were systematically evaluated and consistently underperformed at this data scale — the accuracy ceiling proved feature-informational, not architectural.
+*Envelope of the received signal across all 210 beams.*
 
 ---
 
-### Key Findings
-Same-domain localization reaches centimeter-scale accuracy in both a water bath and a tissue-mimicking phantom. The pivotal negative result: a model trained in water fails structurally when tested through the phantom — it keys on absolute TOF values, which shift with sound speed and geometry across media. This is not a tuning problem but a structural limitation of any physics-blind regressor, motivating the current work on physics-grounded self-calibration and few-shot domain adaptation.
+### Setup
+A custom oscilloscope-based capture system records the probe drive signal and the receiver output together. Electromagnetic tracking provides ground truth in the lab, and an IMU provides probe orientation.
 
-Tracker-free operation via IMU orientation incurs a modest accuracy penalty, concentrated on the axis where 6-axis IMU yaw is fundamentally unobservable.
-
-![Depth prediction vs ground truth](../assets/probe-localisation/scatter.png)
-
-*Predicted vs. actual receiver depth on held-out data.*
-
----
-
-### Technical Contributions
-- Built a synchronized acoustic + electromagnetic acquisition system around a clinical curvilinear probe.
-- Developed a robust TOF extraction pipeline that eliminated frame-detection failures on the hardest dataset.
-- Established same-domain localization in water and tissue-mimicking media with systematic ablations and cross-validation.
-- Diagnosed the structural failure mode of cross-domain transfer, reframing the problem toward physics-grounded self-calibration.
+### My role
+Designed and built the acquisition system and the signal-processing pipeline, and ran the experiments and analysis.
 
 ### Methods
-Acoustic time-of-flight sensing, ultrasound instrumentation, signal processing, gradient-boosted regression, electromagnetic tracking, IMU integration, design of experiments.
+Acoustic time-of-flight sensing, ultrasound instrumentation, signal processing, electromagnetic tracking, IMU integration, experimental design.
 
 ### Status
-Ongoing (June 2025 – present). Current work: self-calibrating physics-based localization, few-shot domain adaptation, and migration to a streaming acquisition platform for real-time inference.
+Ongoing (2025 to present). Results will be added after publication.
 
 ---
 
